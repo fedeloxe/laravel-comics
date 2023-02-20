@@ -1,8 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <h2 class="my-4"> Comics
-    </h2>
+    <h2 class="my-4"> Comics </h2>
     <div class="row">
         @foreach ($comics as $key => $comic )
             <div class="col-4">
