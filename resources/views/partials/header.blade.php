@@ -1,3 +1,3 @@
 <header>
-    <a href="{{ route('comics')}}">Comics</a>
+    {{-- <a href="{{ route('comics')}}">Comics</a> --}}
 </header>

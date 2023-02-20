@@ -14,11 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comics = config('db.comics');
+    return view('comics', compact('comics'));
 });
 
-Route::get('/comics', function () {
+Route::get('/single-comic/{id}', function ($id) {
     $comics = config('db.comics');
+    $single = '';
+    foreach ($comics as $key => $comic) {
+        if ($id == $key) {
+            $single = $comic;
+        }
+    }
 
-    return view('comics', compact('comics'));
-})->name('comics');
+    return view('single-comic', compact('comics', 'single'));
+})->name('single-comic');

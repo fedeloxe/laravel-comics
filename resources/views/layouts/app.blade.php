@@ -20,9 +20,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                @include('comics')
+                <h1>Dc comics</h1>
             </div>
         </div>
     </div>
+    @yield('content')
     @include('partials.footer')
 </body>
