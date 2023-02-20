@@ -22,7 +22,7 @@
         </h2>
         <div class="row">
             @foreach ($comics as $comic )
-                <div class="col-12">
+                <div class="col-4">
                     <div class="card">
                         <img class="card-img-top img-fluid" src="{{ $comic['thumb']}}" >
                         <div class="card-body">
